@@ -45,6 +45,7 @@ const Header = () => {
 					</div>
 					<div className="banner">
 						<h1>Venta de Casas y Departamentos Exclusivos de Lujo</h1>
+						<Link to="/contacto" className="btn btn-header">Contáctanos</Link>
 					</div>
 				</div>
 			</header>
