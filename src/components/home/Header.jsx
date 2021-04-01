@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const Header = () => {
+const Header = (props) => {
 
 	const [movil, setMovil] = useState("oculto")
 
@@ -15,8 +15,8 @@ const Header = () => {
 
 	return (
 		<Fragment>
-			<header className="header">
-				<div className="contenedor">
+			<header className={props.header === "1" ? "header" : "header-alt"}>
+				<div className={props.header === "1" ? "contenedor ocultar" : "contenedor"}>
 					<div className="hero">
 						<div className="logo">
 							<Link to="/">
@@ -43,10 +43,16 @@ const Header = () => {
 							<i onClick={() => mostrarMenu()} class="fas fa-bars"></i>
 						</nav>
 					</div>
-					<div className="banner">
-						<h1>Venta de Casas y Departamentos Exclusivos de Lujo</h1>
-						<Link to="/contacto" className="btn btn-header">Contáctanos</Link>
-					</div>
+					{
+						props.header === "1" ? (
+							<div className="banner">
+								<h1>Venta de Casas y Departamentos Exclusivos de Lujo</h1>
+								<Link to="/contacto" className="btn btn-header">Contáctanos</Link>
+							</div>
+						) : (
+							null
+						)
+					}
 				</div>
 			</header>
 			<nav class={movil === "oculto" ? "movil oculto" :  "movil visible"}>

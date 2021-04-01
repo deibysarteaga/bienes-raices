@@ -5,6 +5,10 @@ import {
   Route
 } from 'react-router-dom'
 import Home from './components/Home.jsx'
+import About from './components/About.jsx'
+import Anuncios from './components/Anuncios.jsx'
+import Blog from './components/Blog.jsx'
+import Contacto from './components/Contacto.jsx'
 
 function App() {
   return (
@@ -12,16 +16,16 @@ function App() {
       <Router>
         <Switch>
           <Route path="/nosotros">
-            <h2>nosotros</h2>
+            <About/>
           </Route>
           <Route path="/anuncios">
-            <h2>Anuncios</h2>
+            <Anuncios/>
           </Route>
           <Route path="/blog">
-            <h2>Blog</h2>
+            <Blog/>
           </Route>
           <Route path="/contacto">
-            <h2>Contacto</h2>
+            <Contacto/>
           </Route>
           <Route path="/">
             <Home/>
