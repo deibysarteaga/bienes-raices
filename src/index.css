@@ -794,7 +794,7 @@ form .form-group {
 /* Pages - Anuncios */
 
 .anuncios {
-	padding: 3rem;
+	padding: 3rem 0;
 }
 
 /* Pages - Blog */
@@ -840,7 +840,7 @@ form .form-group {
 	margin-bottom: 0;
 }
 .page-contacto legend {
-	font-size: 2rem;
+	font-size: 1.6rem;
 	color: #4f4f4f;
 }
 .page-contacto label {
@@ -885,11 +885,6 @@ form .form-group {
 	background-color: #71b100;
 	border: none;
 }
-
-.ocultar {
-	opacity: 0;
-	transition: opacity 1s ease-in-out;
-}
-.mostrar {
-	opacity: 1;
+.page-contacto form {
+	padding: 2rem 0;
 }

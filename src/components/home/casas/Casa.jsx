@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import { Link } from 'react-router-dom'
 
 const Casa = (props) => {
 	return (
@@ -16,7 +15,7 @@ const Casa = (props) => {
 							<span><img src="img/icono_estacionamiento.svg" alt=""/> 1</span>
 							<span><img src="img/icono_wc.svg" alt=""/> 3</span>
 						</div>
-						<Link to="/productos" className="btn btn-casa">Ver Propiedad</Link>
+						<a href="/#" className="btn btn-casa">Ver Propiedad</a>
 					</div>
 				</div>
 			</div>

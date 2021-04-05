@@ -31,7 +31,7 @@ const Casas = () => {
 							precio="5.000.000$"
 						/>
 					</div>
-					<Link to="/productos" className="btn btn-todas">Ver Todas</Link>
+					<Link to="/anuncios" className="btn btn-todas">Ver Todas</Link>
 				</div>
 			</section>
 		</Fragment>

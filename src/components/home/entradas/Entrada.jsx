@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import { Link } from 'react-router-dom'
 
 const Entrada = (props) => {
 	return (
@@ -10,7 +9,7 @@ const Entrada = (props) => {
 					<h3>{props.titulo}</h3>
 					<p className="textos">Escrito el: <span>{props.escritor}</span> por: <span>{props.fecha}</span></p>
 					<p className="textos">{props.prev}</p>
-					<Link to="/blog" className="btn btn-entrada">Leer Entrada</Link>
+					<a href="/#" className="btn btn-entrada">Leer Entrada</a>
 				</div>
 			</div>
 		</Fragment>
